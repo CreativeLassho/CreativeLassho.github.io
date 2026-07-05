@@ -717,6 +717,7 @@ width:100%;
 
 text-align:center;
 
+
 }
 
 .hero h1{
@@ -736,5 +737,50 @@ section h2{
 font-size:28px;
 
 }
+
+}
+/*==========================
+Verified Badge
+==========================*/
+
+.verified{
+
+color:#3b82f6;
+
+font-size:.8em;
+
+margin-left:8px;
+
+}
+
+.verified-badge{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:8px;
+
+margin-left:10px;
+
+padding:6px 12px;
+
+border-radius:999px;
+
+background:rgba(59,130,246,.15);
+
+border:1px solid rgba(59,130,246,.35);
+
+color:#60a5fa;
+
+font-size:14px;
+
+font-weight:600;
+
+}
+
+.verified-badge i{
+
+color:#3b82f6;
 
 }
