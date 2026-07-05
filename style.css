@@ -731,9 +731,42 @@ font-size:16px;
 }
 
 section h2{
+  
 
 font-size:28px;
 
 }
 
+}
+/* ===== Verified Badge ===== */
+.verified-badge{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    color: #1DA1F2;
+    font-size: 0.65em;
+    vertical-align: middle;
+    animation: verifiedGlow 2s ease-in-out infinite;
+    will-change: opacity, transform, filter;
+}
+
+.verified-badge i{
+    filter: drop-shadow(0 0 6px rgba(29,161,242,.8));
+    transition: transform .3s ease, filter .3s ease;
+}
+
+.hero-title:hover .verified-badge i{
+    transform: rotate(8deg) scale(1.15);
+    filter: drop-shadow(0 0 12px rgba(29,161,242,1));
+}
+
+@keyframes verifiedGlow{
+    0%, 100%{
+        opacity: .8;
+    }
+    50%{
+        opacity: 1;
+        filter: drop-shadow(0 0 10px #1DA1F2);
+    }
 }
